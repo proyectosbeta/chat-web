@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat grupal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="center">Chat app</h1>
+    
+        <div id="chatContainer"></div>
+
+        <div class="center">
+            <div id="messageForm">
+              <input class="input center" type="text" id="messageInput" placeholder="Message" />
+              <button class="btn" onclick="send_message()" name="send_message">Send</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/client/chat.js"></script>
+</body>
+</html>
