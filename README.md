@@ -47,3 +47,9 @@ We need to configure the server startup script.
 ```bash
 pm2 startup
 ```
+
+## Web access
+
+```
+http://51.15.192.116:5000/
+```
