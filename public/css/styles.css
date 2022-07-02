@@ -8,6 +8,11 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    padding-top: 30px;
+    font-size: 60px;
+}
+
 .center {
     text-align: center;
     margin: 0 auto;
