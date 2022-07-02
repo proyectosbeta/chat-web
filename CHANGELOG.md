@@ -1,3 +1,7 @@
+# v1.1.0
+
+- [feat] Add disconnect user.
+
 # v1.0.1
 
 - [fix] Send message using enter button.

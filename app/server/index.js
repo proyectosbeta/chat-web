@@ -15,9 +15,9 @@ let users = {}
 
 io.on('connection', (socket) => {
     console.log('👾 New socket connected! >>', socket.id);
-    
+
     // Handles new connection.
-    socket.on('data_user', function(data){
+    socket.on('data_user', function (data) {
         const userName = data.username;
 
         console.log(`Username: ${userName}`);
@@ -27,25 +27,39 @@ io.on('connection', (socket) => {
 
         io.emit('welcome-message', {
             user: 'server',
-            message: `Welcome to Proyectos BETA - chat ${userName}. There are ${
-                Object.keys(users).length
-            } users connected`,
+            message: `Welcome to Proyectos BETA - chat ${userName}. There are ${Object.keys(users).length
+                } users connected`,
         });
     });
 
     // Handles message posted by client
-    socket.on('new-message', function(data){
-        const user    = data.user;
+    socket.on('new-message', function (data) {
+        const user = data.user;
         const message = data.message;
         console.log(`👾 new-message from ${user}`);
 
         socket.broadcast.emit('broadcast-message', {
-            user   : users[user],
+            user: users[user],
             message: message,
+        });
+    });
+
+    socket.on('disconnect', () => {
+        const userName = users[socket.id];
+        const prop = socket.id;
+
+        console.log(`user disconnected :>> ${userName}`);
+
+        delete users[prop];
+
+        io.emit('chat message', {
+            user: 'server',
+            message: `${userName} left the chat. There are ${Object.keys(users).length
+                } users connected`,
         });
     });
 });
 
 server.listen(APP_PORT, () => {
-  console.log(`Listening on *: ${APP_PORT}`);
+    console.log(`Listening on *: ${APP_PORT}`);
 });
