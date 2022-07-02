@@ -1,4 +1,15 @@
 const socket = io();
+const form   = document.getElementById('messageForm');
+const input  = document.getElementById('messageInput');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  if (input.value) {
+    send_message();
+    input.value = '';
+  }
+});
 
 // Prompt to ask user's name.
 const username = prompt('Welcome! Please enter your name:');

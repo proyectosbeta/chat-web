@@ -14,6 +14,6 @@ function send_message(){
         messageInput.value = ''
     } else {
         // adds error styling to input
-        messageInput.classList.add('error')
+        messageInput.classList.add('error');
     }
 }
