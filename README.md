@@ -2,9 +2,10 @@
 
 # Tecnologies
 
-- NodeJS
-- NPM
-- Socket.io
+- NodeJS 14.19.3
+- NPM 6.14.17
+- Socket.io 4.5.1
+- Express 4.18.1
 
 # Development
 
