@@ -1,10 +1,12 @@
+require("dotenv").config();
+
 const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-const PORT = 5000;
+const APP_PORT = process.env.APP_PORT || 3000;
 
 app.use(express.static('public'));
 
@@ -44,6 +46,6 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(PORT, () => {
-  console.log(`Listening on *: ${PORT}`);
+server.listen(APP_PORT, () => {
+  console.log(`Listening on *: ${APP_PORT}`);
 });
