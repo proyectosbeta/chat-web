@@ -1,6 +1,7 @@
 # v1.1.0
 
 - [feat] Add disconnect user.
+- [fix] Text
 
 # v1.0.1
 

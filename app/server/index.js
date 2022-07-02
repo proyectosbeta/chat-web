@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
 
         io.emit('welcome-message', {
             user: 'server',
-            message: `Welcome to Proyectos BETA - chat ${userName}. There are ${Object.keys(users).length
+            message: `Welcome to Proyectos Beta - chat ${userName}. There are ${Object.keys(users).length
                 } users connected`,
         });
     });
