@@ -7,6 +7,7 @@ The chat for Proyectos Beta (proyectosbeta.net)
 - NPM 6.14.17
 - Socket.io 4.5.1
 - Express 4.18.1
+- Sonarqube 9.5.XX
 
 # Development
 
