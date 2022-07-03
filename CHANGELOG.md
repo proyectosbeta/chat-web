@@ -2,6 +2,7 @@
 
 - [feat] Add disconnect user.
 - [fix] Text
+- [test] Add sonarqube
 
 # v1.0.1
 

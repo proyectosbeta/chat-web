@@ -1,4 +1,5 @@
-# Chat
+# Description
+The chat for Proyectos Beta (proyectosbeta.net)
 
 # Tecnologies
 
@@ -25,6 +26,55 @@ npm start
 
 ```
 http://localhost:3000/
+```
+
+# Quality code 
+
+## Sonarqube
+
+-   [Site](https://www.sonarqube.org/)
+
+### Install
+
+#### With docker
+
+```bash
+docker pull sonarqube
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+```
+
+#### Web access
+
+```
+http://localhost:9000
+```
+
+##### Credentials
+
+-   User: admin
+-   Password: admin
+
+#### Use with docker
+
+```bash
+docker pull newtmitch/sonar-scanner
+
+```
+
+##### GNU-Linux/MacOS
+
+Execute
+
+```bash
+docker run -ti -v /home/proyectosbeta/repositoriosGit/chat-web:/usr/src --link sonarqube newtmitch/sonar-scanner
+```
+
+##### Microsoft Windows
+
+Execute
+
+```bash
+docker run -ti -v C:\Users\proyectosbeta\repositoriosGit\chat-web:/usr/src --link sonarqube newtmitch/sonar-scanner
 ```
 
 # Production
