@@ -1,8 +1,9 @@
 # v1.1.0
 
 - [feat] Add disconnect user.
-- [fix] Text
-- [test] Add sonarqube
+- [fix] Text.
+- [test] Add sonarqube.
+- [feat] Add user typing message.
 
 # v1.0.1
 

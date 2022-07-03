@@ -79,3 +79,9 @@ body {
     background-color: aqua;
     text-align: left;
 }
+
+#displayTyping {
+    color: rgb(12, 87, 37);
+    font-size: 1.2rem;
+    text-align: center;
+}

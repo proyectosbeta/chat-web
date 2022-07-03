@@ -44,6 +44,20 @@ io.on('connection', (socket) => {
         });
     });
 
+    socket.on('typing', (data) => {
+        const user = data.user;
+        const typing = data.typing;
+        const message = `${user} is typing...`;
+
+        console.log(`👾 ${message}`);
+
+        io.emit('typing-message', {
+            user: 'server',
+            typing: typing,
+            message: message,
+        });
+    });
+
     socket.on('disconnect', () => {
         const userName = users[socket.id];
         const prop = socket.id;
