@@ -4,6 +4,7 @@
 - [fix] Text.
 - [test] Add sonarqube.
 - [feat] Add user typing message.
+- [style] Improve the chat interface.
 
 # v1.0.1
 

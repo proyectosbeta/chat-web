@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background-color: rgb(121, 121, 121);
 }
 
 #app {
@@ -20,7 +21,7 @@ body {
 
 #chatContainer {
     height: 75vh;
-    border: 1px solid #e095fd;
+    border: 1px solid #3f3c3f;
     border-radius: 10px;
     margin: 1rem 1rem;
     padding: 0.5rem;
@@ -38,7 +39,7 @@ body {
     padding: 0.5rem;
     margin: 0 0.5rem;
     width: 70%;
-    border: 1px solid #c2c2c2;
+    border: 1px solid #0e0d0d;
     border-radius: 2px;
 }
 
@@ -52,7 +53,7 @@ body {
     background-color: #5fcefa;
     border: 1px solid #06b8ff;
     border-radius: 5px;
-    color: #fff;
+    color: rgb(6, 6, 6);
     font-weight: 600;
 }
 
@@ -71,12 +72,12 @@ body {
 }
 
 .self-message {
-    background-color: #ccffcc;
+    background-color: #dff2df;
     text-align: right;
 }
 
 .others-message {
-    background-color: aqua;
+    background-color: rgb(116, 175, 175);
     text-align: left;
 }
 
