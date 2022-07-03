@@ -91,13 +91,13 @@ npm install pm2 -g
 We must create a daemon with PM2 so we stop the server and execute the following command:
 
 ```bash
-pm2 start /home/proyectosbeta/repositoriosGit/chat-web/app/server/index.js --name chat-web
+sudo pm2 start /home/proyectosbeta/repositoriosGit/chat-web/app/server/index.js --name chat-web
 ```
 
 We need to configure the server startup script.
 
 ```bash
-pm2 startup
+sudo pm2 startup
 ```
 
 ## Web access
