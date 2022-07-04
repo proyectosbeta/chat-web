@@ -103,6 +103,4 @@ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -
 
 ## Web access
 
-```
-http://51.15.192.116:5000/
-```
+-   [Demo](http://51.15.192.116:5000/)
