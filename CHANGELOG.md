@@ -1,3 +1,7 @@
+# v1.1.1
+
+- [update] Update package json file.
+
 # v1.1.0
 
 - [feat] Add disconnect user.
