@@ -5,7 +5,12 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
-const io = new Server(server);
+const io = new Server(server, {
+    cors: {
+        origin: '*',
+        methods: ['GET']
+    }
+});
 const APP_PORT = process.env.APP_PORT || 3000;
 
 app.use(express.static('public'));

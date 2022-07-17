@@ -1,3 +1,7 @@
+# v1.2.0
+
+- [feat] Add cors.
+
 # v1.1.1
 
 - [update] Update package json file.
